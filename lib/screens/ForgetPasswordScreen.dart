@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:login_register/screens/LoginScreen.dart';
 
-class ForgetPassword extends StatefulWidget {
-  const ForgetPassword({super.key});
+class ForgetPasswordScreen extends StatefulWidget {
+  const ForgetPasswordScreen({super.key});
 
   @override
-  State<ForgetPassword> createState() => _ForgetPasswordState();
+  State<ForgetPasswordScreen> createState() => _ForgetPasswordScreenState();
 }
 
-class _ForgetPasswordState extends State<ForgetPassword> {
+class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,14 +16,12 @@ class _ForgetPasswordState extends State<ForgetPassword> {
           elevation: 0,
           leading: IconButton(
             onPressed: () {
-              //الانتقال الى شاشة جديدة بدون الرجوع الى الشاشة الحالية
-              //Navigator.pushReplacementNamed(context, '/' );
-
-              //الانتقال الى شاشة جديدة بدون الرجوع الى اي من الشاشات السابقة
               Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
             },
-            icon: Icon(Icons.arrow_back,color: Colors.black,),
-
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+            ),
           ),
         ),
         body: SafeArea(
@@ -59,11 +56,11 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                       hintText: 'Email',
                       hintStyle: TextStyle(color: Colors.grey.shade400),
                       enabledBorder: OutlineInputBorder(
-                          borderSide:
-                          BorderSide(color: Colors.grey.shade300, width: 1.5)),
+                          borderSide: BorderSide(
+                              color: Colors.grey.shade300, width: 1.5)),
                       focusedBorder: OutlineInputBorder(
-                          borderSide:
-                          BorderSide(color: Colors.grey.shade500, width: 1.5)),
+                          borderSide: BorderSide(
+                              color: Colors.grey.shade500, width: 1.5)),
                     ),
                   ),
                   SizedBox(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_register/screens/ForgetPassword.dart';
+import 'package:login_register/screens/ForgetPasswordScreen.dart';
 import 'package:login_register/screens/LoginScreen.dart';
 import 'package:login_register/screens/RegisterScreen.dart';
 
@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       routes: {
         '/' : (context) => const LoginScreen(),
-        '/forget_password' : (context) => const ForgetPassword(),
+        '/forget_password' : (context) => const ForgetPasswordScreen(),
         '/create_account' : (context) => const RegisterScreen(),
       },
       initialRoute: '/',
