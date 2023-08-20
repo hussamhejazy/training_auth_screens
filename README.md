@@ -1,6 +1,6 @@
 # login_register
 
-A new Flutter project.
+This project is part of the first training for the students of the mobile development using flutter at the School of Engineers
 
 ## Getting Started
 
